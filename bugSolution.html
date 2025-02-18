@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv" class="myClass">
+    This text is now visible because the CSS bug has been fixed.
+  </div>
+  <style>
+    /* Corrected CSS selectors */
+    #myDiv { display: none; }
+    #myDiv:hover { display: block !important; }
+    .myClass { display: block; }
+    /* This rule is handled correctly now */
+    #myDiv.myClass{ display: block !important;}
+  </style>
+</body>
+</html>
