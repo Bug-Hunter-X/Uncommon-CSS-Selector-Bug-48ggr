@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will be hidden due to the CSS bug.
+  </div>
+  <style>
+    /* Incorrect CSS selector causing unexpected behavior */
+    #myDiv { display: none; }
+    #myDiv:hover { display: block; } 
+    .myClass { display: block; }
+    #myDiv.myClass{ display: none;}
+  </style>
+</body>
+</html>
